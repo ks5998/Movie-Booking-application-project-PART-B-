@@ -1,0 +1,19 @@
+.header {
+    background: #222;
+    height: 36px;
+    padding: 8px 32px 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.header img {
+    background: #ff7f7f;
+    height: 35px;
+    animation: rotate linear 8s infinite;
+    left: 0;
+    
+}
+@keyframes rotate {
+    from {
+        transform: scaleX(-1);
+    }
+}
