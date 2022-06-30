@@ -4,7 +4,7 @@ import './index.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from '../src/screens/home/Home';
 import Details from './screens/details/Details';
-import BookShow from './screens/bookshow/BookShow';
+
 
 
 

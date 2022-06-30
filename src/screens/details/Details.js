@@ -2,7 +2,6 @@ import { Link, useLocation } from 'react-router-dom'
 import React from 'react'
 import { ImageList, ImageListItem, ImageListItemBar, Typography } from '@material-ui/core'
 import Header from '../../common/header/Header'
-import moviesData from '../../common/moviesData/moviesData';
 import YouTube from 'react-youtube';
 import Ratings from './Ratings';
 import './Details.css';
@@ -23,7 +22,10 @@ const Details = () => {
         <div className="movieDetails">
 
             <div className="leftDetails">
-                <img src={movieData.poster_url} className="detailImage" />
+                <img 
+                src={movieData.poster_url} 
+                className="detailImage"
+                alt="movieData.title" />
             </div>
 
         <div className="middleDetails">
@@ -77,7 +79,9 @@ const Details = () => {
             {movieData.artists.map((artist) => {
               return (
                 <ImageListItem key={artist.id}>
-                  <img src={artist.profile_url} />
+                  <img 
+                  src={artist.profile_url}
+                  alt={artist.first_name} />
                   <ImageListItemBar
                     title={`${artist.first_name} ${artist.last_name}`}
                   ></ImageListItemBar>
