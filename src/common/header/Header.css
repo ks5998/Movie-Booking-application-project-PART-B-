@@ -17,3 +17,7 @@
         transform: scaleX(-1);
     }
 }
+
+.bookNowButton{
+    margin-right: 10px !important;
+  }

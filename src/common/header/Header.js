@@ -9,11 +9,25 @@ class Header extends Component {
         <div className="header">
             <img src={logo} alt="logo" id="image" />
 
-        <Button variant="contained" color="primary">
-            BOOK SHOW
-        </Button>
+
+        <div className="buttonContainer">
+            {this.props.isDetails ? (
+          <Button 
+          variant="contained" 
+          color="primary"
+          className="bookNowButton">
+            Book Show
+          </Button>
+            ) : ("")
+            }
+          <Button 
+            className="loginLogoutButton" 
+            variant="contained">
+            LOGIN
+          </Button>
         </div>
-    )
+        </div>
+    );
    }
 }
 export default Header;

@@ -54,7 +54,7 @@ class Home extends Component {
     render(){
         return (
             <div>
-                <Header />
+                <Header isDetails={false} />
 
                 <span className="heading">Upcoming Movies</span>
                 
